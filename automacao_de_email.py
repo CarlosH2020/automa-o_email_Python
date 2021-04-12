@@ -4,7 +4,7 @@ Projeto de Automção de envio de E-Mail
 By Carlos Henrique Barros Silva Campos
 """
 import win32com.client as win32
-import time
+#import time
 
 # integração com outlook
 outlook = win32.Dispatch('outlook.application')
