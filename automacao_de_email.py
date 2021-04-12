@@ -26,7 +26,7 @@ def menu():
         pessoa = input('Para:')
         titulo = input('Título:')
         msg = input('Msg:')
-        configuraEmail(pessoa, titulo, msg)
+        envia_email(pessoa, titulo, msg)
     elif opc == 2:
         lista_de_email()
     elif opc == 3:
@@ -47,7 +47,7 @@ def lista_de_email():
         email.HTMLBody = f"""<p>{msg}</p>"""
 
 
-def configuraEmail(Email, titulo_msg, corpo_msg):
+def envia_email(Email, titulo_msg, corpo_msg):
     email.to = f"{Email};"
     email.Subject = titulo_msg
     email.HTMLBody = f"""<p>{corpo_msg}</p>"""
